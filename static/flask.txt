@@ -1,0 +1,1 @@
+This is folder where you will store all css and js file of your html webpage
