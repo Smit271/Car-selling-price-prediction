@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Car Selling Price Prediction</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/view.css') }}" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Car Selling Price Prediction</a></h1>
+		<form id="form_16751" class="appnitro"  method="POST" action="http://2a263d8de558.ngrok.io/car_selling">
+					<div class="form_description">
+			<h2>Car Selling Price Prediction</h2>
+			<p>Please Enter Details of your car sincerely</p>
+		</div>						
+			<ul >
+			
+					<li id="li_1" >
+		<label class="description" for="element_1">Km Driven  </label>
+		<div>
+			<input id="element_1" name="km_driven" class="element text medium" type="text" maxlength="255" value="" required/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="fuel">Fuel Type </label>
+		<div>
+		<select class="element select medium" id="element_2" name="fuel"> 
+			<option value="" selected="selected"></option>
+				<option value= 2 >Petrol</option>
+				<option value= 1 >Diesel</option>
+				<option value= 3 >LPG</option>
+				<option value= 4 >CNG</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="transmission">Transmission </label>
+		<span>
+			<input id="element_3_1" name="transmission" class="element radio" type="radio" value= 0 />
+			<label class="choice" for="element_3_1">Manual</label>
+			<input id="element_3_2" name="transmission" class="element radio" type="radio" value= 1 />
+			<label class="choice" for="element_3_2">Automatic</label>
+
+		</span> 
+		</li>		<li id="li_8" >
+		<label class="description" for="owner">Owner Type </label>
+		<span>
+			<input id="element_8_1" name="owner" class="element radio" type="radio" value= 5 />
+			<label class="choice" for="element_8_1">First</label>
+			<input id="element_8_2" name="owner" class="element radio" type="radio" value= 4 />
+			<label class="choice" for="element_8_2">Second</label>
+			<input id="element_8_3" name="owner" class="element radio" type="radio" value= 3 />
+			<label class="choice" for="element_8_3">Third</label>
+			<input id="element_8_4" name="owner" class="element radio" type="radio" value= 2 />
+			<label class="choice" for="element_8_4">Forth & above</label>
+			<input id="element_8_5" name="owner" class="element radio" type="radio" value= 1 />
+			<label class="choice" for="element_8_5">Test Drive Car</label>
+
+		</span> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Mileage ( km/litre )  </label>
+		<div>
+			<input id="element_4" name="mileage" class="element text medium" type="text" maxlength="255" value="" required/> 
+		</div> 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Engine (CC) </label>
+		<div>
+			<input id="element_5" name="engine" class="element text medium" type="text" maxlength="255" value="" required/> 
+		</div> 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Max Power (bph) </label>
+		<div>
+			<input id="element_6" name="max_power" class="element text medium" type="text" maxlength="255" value="" required/> 
+		</div> 
+		</li>		<li id="li_7" >
+		<label class="description" for="element_7">Seats </label>
+		<div>
+			<input id="element_7" name="seats" class="element text medium" type="text" maxlength="255" value="" required/> 
+		</div><p class="guidelines" id="guide_7"><small>2,5,7</small></p> 
+		</li>		<li id="li_9" >
+		<label class="description" for="element_9">Are you  Car Dealer? </label>
+		<span>
+			<input id="element_9_1" name="Dealer" class="element radio" type="radio" value= 1 />
+			<label class="choice" for="element_9_1">Yes</label>
+			<input id="element_9_2" name="Dealer" class="element radio" type="radio" value= 0 />
+			<label class="choice" for="element_9_2">No</label>
+
+		</span> 
+		</li>		<li id="li_10" >
+		<label class="description" for="element_10">Are you Car Owner ? </label>
+		<span>
+			<input id="element_10_1" name="Individual" class="element radio" type="radio" value= 1 />
+			<label class="choice" for="element_10_1">Yes</label>
+			<input id="element_10_2" name="Individual" class="element radio" type="radio" value= 0 />
+			<label class="choice" for="element_10_2">No</label>
+
+		</span> 
+		</li>		<li id="li_11" >
+		<label class="description" for="element_11">Are you Trustmark Dealer(Certification required afterwards)? </label>
+		<span>
+			<input id="element_11_1" name="Trustmark_Dealer" class="element radio" type="radio" value= 1 />
+			<label class="choice" for="element_11_1">Yes</label>
+			<input id="element_11_2" name="Trustmark_Dealer" class="element radio" type="radio" value= 0 />
+			<label class="choice" for="element_11_2">No</label>
+
+		</span> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="16751" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			Made by <a href="https://github.com/Smit271"><b>Smit Panchal</b></a>
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
